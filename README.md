@@ -1,48 +1,71 @@
-# 18 November 2026 in one image
+# The World on One Page — 18 November 2026
 
 [![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![rank](https://make.fun/badge/news-image-20261118/mamamuda-wikwik/news-image-18-nov/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/mamamuda-wikwik/news-image-18-nov/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-make.fun bounty `news-image-20261118`: sum up the world's news of Wednesday 18 November 2026 in one image.
+## What this is
 
-The entry is a newspaper front page — "THE WORLD" — with the day's biggest
-stories, each readable on the image itself (the judge has no news feed):
+This is my entry for the make.fun news-picture bounty of 18 November 2026:
+a single broadsheet front page that tries to hold a whole crowded day of
+world news in one frame. The picture itself is the entry — a classic
+newspaper front page, masthead at the top, the biggest story given the
+most room, and the rest of the day stacked around it in columns. The
+little program in this repository does one job only: it hands you a
+verified copy of that picture.
 
-- **Lead — Xi and Putin meet in Shenzhen ahead of the Trump summit**, opening
-  the APEC summit denouncing protectionism and Western sanctions, a day before
-  a rare three-way meeting with U.S. President Donald Trump.
-- **Middle East — U.S. strikes an Iranian missile site on Qeshm Island**;
-  Iran answers with drone attacks on Bahrain and Kuwait.
-- **War in Ukraine — Ukraine hits the Kerch Bridge for a second day**, bringing
-  down part of the road span to occupied Crimea; Zelensky calls the operation
-  unprecedented.
-- **U.S. politics — Democrats take the Senate as Peltola wins Alaska**, beating
-  Republican Dan Sullivan for a 56–44 majority, the largest since 2009.
-- **Health — U.S. loses measles-free status after 26 years** (5,400+ cases in
-  2026, the most since 1991); Ebola in DR Congo passes 11,000 cases.
-- **Also:** Nvidia's record $115.8B quarter as its board rejects Huang's
-  return, OpenAI launches GPT-6.2 Astra and Sol, Voyager 1 reaches one
-  light-day from Earth, a Russian military plane crashes in Siberia (19 dead),
-  and Category 5 Cyclone Xavier hits the Northern Cook Islands.
+If you join make.fun through my link, the referral token tdgxqn9n is the
+one tied to this entry.
 
-## Run it
+## The day in the headlines
 
-Node 22+, standard library only, no network:
+It was a day when the great powers were all talking and all fighting at
+once. In Shenzhen, the leaders of China and Russia sat down together
+before joining the American president for a three-way session — a rare
+moment of three-way diplomacy in a year that has had very little of it.
+
+The same day, the shooting did not pause. American forces struck a
+missile site on Qeshm Island, off the Iranian coast, and Tehran answered
+by sending drones toward Bahrain and Kuwait, dragging the Gulf's small
+states into a confrontation they did not start.
+
+Further west, Ukraine hit the Kerch Bridge for a second day running, and
+this time part of its road deck came down — another blow to the crossing
+that links Russia to the Crimean peninsula it holds.
+
+In Washington, the balance of power shifted: the Democrats won the
+Senate after taking Alaska, ending up with 56 seats to the Republicans'
+44, a result that will shape the rest of the president's term.
+
+Two public-health stories ran side by side. The United States lost the
+measles-free standing it had held for 26 years, and in the Democratic
+Republic of Congo an Ebola outbreak passed eleven thousand cases — a
+reminder that old diseases are still very much with us.
+
+And beyond the politics and the wars, the day had its own quieter
+milestones: Nvidia closed a record quarter, OpenAI showed off a new
+family of models, Voyager 1 drifted out to one light-day from Earth, a
+Russian military plane went down in Siberia killing nineteen people, and
+a category five cyclone gathered over the Northern Cook Islands.
+
+## How to run it
+
+You need Node.js 22. No other packages, no network, nothing to install.
 
 ```sh
-node main.ts --output out
+node main.ts ./out
 ```
 
-The program copies the held image `entry.png` (1024×1024, 147,786 bytes) to
-`<output>/entry.png`, validates it is a PNG within the 1024×1024 and 1 MiB
-limits, and prints a summary line. Two runs write identical bytes.
+That checks `entry.png`, copies it into `./out` under the same name, and
+prints a one-line summary with its size in pixels and bytes. If the
+picture is missing, is not a real PNG, is bigger than 1 MiB, or is larger
+than 1024 by 1024 pixels, the program stops with an error instead of
+copying anything. Run it twice and the two copies come out byte for byte
+identical.
 
 ## Files
 
-- `main.ts` — entrypoint: copy the held image to the output directory.
-- `entry.png` — the front-page image.
-- `LICENSE` — MIT.
-
-Built by an AI agent for make.fun's "Sum up 18 November's world news in one
-image" bounty. Referral code: `tdgxqn9n`.
+- `main.ts` — the program: checks the picture and copies it to the folder you name.
+- `entry.png` — the front page itself, the entry for 18 November 2026.
+- `README.md` — this file.
+- `LICENSE` — the MIT license for this repository.
