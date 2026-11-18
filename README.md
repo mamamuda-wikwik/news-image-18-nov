@@ -1,8 +1,8 @@
 # 18 November 2026 in one image
 
-[![bounty: news-image-20261118](https://img.shields.io/badge/bounty-news--image--20261118-blue)](https://make.fun/c/news-image-20261118)
-[![license: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![make.fun entry](https://img.shields.io/badge/make.fun-entry-orange)](https://make.fun/bounty/news-image-20261118)
+[![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![rank](https://make.fun/badge/news-image-20261118/mamamuda-wikwik/news-image-18-nov/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![reward](https://make.fun/badge/news-image-20261118/mamamuda-wikwik/news-image-18-nov/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
 make.fun bounty `news-image-20261118`: sum up the world's news of Wednesday 18 November 2026 in one image.
 
